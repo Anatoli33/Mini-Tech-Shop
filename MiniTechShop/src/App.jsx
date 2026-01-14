@@ -7,11 +7,11 @@ function App() {
 
 
   return (
-    <>
+    <div className='app-layout'>
     <Navbar/>
     <Hero/>
     <Footer/>
-    </>
+    </div>
   )
 }
 
