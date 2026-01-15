@@ -16,18 +16,18 @@ const Products = () => {
 
         <article className="product-card">
           <img
-            src="https://cdn.ozone.bg/media/catalog/product/k/o/kontroler_dualsense_edge_wireless_controller_1673274086_0.jpg"
-            alt="PS5 Controller"
+            src="https://laptop.bg/system/images/189888/original/RZ0102540100R3M1.jpg"
+            alt="Gaming mouse"
           />
-          <h3>Контролер за PS5</h3>
+          <h3>Гейминг мишка Razer</h3>
         </article>
 
         <article className="product-card">
           <img
-            src="https://cdn.ozone.bg/media/catalog/product/k/o/kontroler_dualsense_edge_wireless_controller_1673274086_0.jpg"
-            alt="PS5 Controller"
+            src="https://m.media-amazon.com/images/I/51K1mE5uVyL._AC_UF894,1000_QL80_.jpg"
+            alt="Gaming keyboard"
           />
-          <h3>Контролер за PS5</h3>
+          <h3>Гейминг клавиатура Logitech</h3>
         </article>
       </div>
     </section>
