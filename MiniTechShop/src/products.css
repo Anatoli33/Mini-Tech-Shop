@@ -1,6 +1,7 @@
 .products {
   padding: 4rem 2rem;
   background-color: #f9fafb;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .products h2 {
@@ -47,3 +48,12 @@
   font-size: 1.1rem;
   color: #1f2937;
 }
+
+/* Price */
+.price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #17a2f3;
+  margin-top: 0.5rem;
+}
+

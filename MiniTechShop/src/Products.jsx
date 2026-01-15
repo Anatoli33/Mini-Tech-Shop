@@ -12,6 +12,7 @@ const Products = () => {
             alt="PS5 Controller"
           />
           <h3>Controller for PS5</h3>
+          <p className="price">$69.99</p>
         </article>
 
         <article className="product-card">
@@ -20,6 +21,7 @@ const Products = () => {
             alt="Gaming mouse"
           />
           <h3>Gaming mouse Razer</h3>
+          <p className="price">$59.99</p>
         </article>
 
         <article className="product-card">
@@ -28,6 +30,7 @@ const Products = () => {
             alt="Gaming keyboard"
           />
           <h3>Gaming keyboard Logitech</h3>
+          <p className="price">$89.99</p>
         </article>
       </div>
     </section>
