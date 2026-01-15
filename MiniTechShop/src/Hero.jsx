@@ -1,16 +1,21 @@
-import "./hero.css"
- 
-const Hero = ()=>{
-    return(
+import { Link } from "react-router-dom";
+import "./hero.css";
+
+const Hero = () => {
+  return (
     <section id="home" className="hero">
-    <h2>Дoбре дошъл в Mini Tech Shop</h2>
+      <h2>Добре дошъл в Mini Tech Shop</h2>
+
       <p>
-         Открий най-новите и качествени технологични джаджи на страхотни цени – само в Mini Tech Shop!
+        Открий най-новите и качествени технологични джаджи на страхотни цени –
+        само в Mini Tech Shop!
       </p>
-      <a href="">
+
+      <Link to="/products" className="hero-link">
         <button>Виж продукти</button>
-      </a>
-    </section> 
-    )
+      </Link>
+    </section>
+  );
 };
+
 export default Hero;

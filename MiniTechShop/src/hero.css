@@ -32,6 +32,40 @@
   text-shadow: 1px 1px 6px rgba(0,0,0,0.2);
 }
 
+* {
+  margin: 0;
+}
+
+.hero {
+  flex: 1;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 8rem 2rem;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 40rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+}
+
 .hero button {
   background-color: white;
   color: #3b82f6; 
