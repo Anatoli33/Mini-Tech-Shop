@@ -6,5 +6,8 @@
     "build": "cd ./MiniTechShop && npm run build",
     "preview": "cd ./MiniTechShop && npm run preview",
     "lint": "cd ./MiniTechShop && npm run lint"
+  },
+  "dependencies": {
+    "react-router-dom": "^7.12.0"
   }
 }
