@@ -11,7 +11,7 @@ const Products = () => {
             src="https://cdn.ozone.bg/media/catalog/product/k/o/kontroler_dualsense_edge_wireless_controller_1673274086_0.jpg"
             alt="PS5 Controller"
           />
-          <h3>Контролер за PS5</h3>
+          <h3>Controller for PS5</h3>
         </article>
 
         <article className="product-card">
@@ -19,7 +19,7 @@ const Products = () => {
             src="https://laptop.bg/system/images/189888/original/RZ0102540100R3M1.jpg"
             alt="Gaming mouse"
           />
-          <h3>Гейминг мишка Razer</h3>
+          <h3>Gaming mouse Razer</h3>
         </article>
 
         <article className="product-card">
@@ -27,7 +27,7 @@ const Products = () => {
             src="https://m.media-amazon.com/images/I/51K1mE5uVyL._AC_UF894,1000_QL80_.jpg"
             alt="Gaming keyboard"
           />
-          <h3>Гейминг клавиатура Logitech</h3>
+          <h3>Gaming keyboard Logitech</h3>
         </article>
       </div>
     </section>
