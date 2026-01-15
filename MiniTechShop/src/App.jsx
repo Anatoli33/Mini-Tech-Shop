@@ -6,19 +6,20 @@ import { Route, Routes } from 'react-router-dom';
 import Products from './Products';
 
 function App() {
-
-
   return (
-    
-    <div className='app-layout'>
-    <Navbar/>
-    <Routes>
-      <Route path="/" element={<Hero />} />
-      <Route path="/products" element={<Products />} />
-    </Routes>
-    <Footer/>
+    <div className="app-layout">
+      <Navbar />
+
+      <main className="main-content">
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/products" element={<Products />} />
+        </Routes>
+      </main>
+
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
