@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -46,9 +46,14 @@ const Products = () => {
       <h2>Products</h2>
 
       <Swiper
-        modules={[Navigation, Pagination]}
+        modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
         slidesPerView={3}
+        loop={true}
+        autoplay={{
+          delay: 3000,
+          pauseOnMouseEnter: true
+        }}
         navigation
         pagination={{ clickable: true }}
         breakpoints={{
