@@ -28,15 +28,15 @@ const products = [
   },
     {
     id: 4,
-    title: "Gaming keyboard Logitech",
+    title: "Gaming keyboard Razer",
     price: "$89.99",
-    img: "https://m.media-amazon.com/images/I/51K1mE5uVyL._AC_UF894,1000_QL80_.jpg",
+    img: "https://m.media-amazon.com/images/I/71sXzUqI9XL._AC_UF894,1000_QL80_.jpg",
   },
     {
     id: 5,
-    title: "Gaming keyboard Logitech",
+    title: "Gaming headset HyperX",
     price: "$89.99",
-    img: "https://m.media-amazon.com/images/I/51K1mE5uVyL._AC_UF894,1000_QL80_.jpg",
+    img: "https://m.media-amazon.com/images/I/71ltsViEA8L._AC_UF894,1000_QL80_.jpg",
   },
 ];
 
