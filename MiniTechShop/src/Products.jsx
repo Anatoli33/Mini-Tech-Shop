@@ -48,7 +48,7 @@ const Products = () => {
 
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={20}
+        spaceBetween={50}
         slidesPerView={3}
         loop={true}
         autoplay={{
@@ -70,7 +70,17 @@ const Products = () => {
               <img src={product.img} alt={product.title} />
               <h3>{product.title}</h3>
               <p className="price">{product.price}</p>
-              <button className="buy-btn">Buy</button>
+              <button
+                className="buy-btn"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  alert("Added to the cart!");
+                }}
+              >
+                Buy
+              </button>
+
             </article>
             </Link>
           </SwiperSlide>
