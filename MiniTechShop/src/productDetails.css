@@ -1,0 +1,46 @@
+.details {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.back-btn {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.details-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.details-card img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+}
+
+.details-info h1 {
+  font-size: 2rem;
+}
+
+.details-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #17a2f3;
+  margin: 1rem 0;
+}
+
+.details-desc {
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .details-card {
+    grid-template-columns: 1fr;
+  }
+}
