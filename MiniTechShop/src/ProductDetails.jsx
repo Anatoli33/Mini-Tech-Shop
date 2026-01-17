@@ -13,6 +13,7 @@ const products = [
     title: "Gaming mouse Razer",
     price: "$59.99",
     img: "https://laptop.bg/system/images/189888/original/RZ0102540100R3M1.jpg",
+    description: "Lorem ipsum fdsafdsa fdsfsasd fasdfdasdfasd fasd gafsdgv d dfghhgdfhd",
   },
   {
     id: 3,
@@ -52,12 +53,18 @@ const ProductDetails = () => {
 
         <div className="details-info">
           <h1>{product.title}</h1>
-          <p className="details-price">{product.price}</p>
           <p className="details-desc">{product.description}</p>
-
-          <button className="buy-btn">
-            Add to cart
-          </button>
+          <p className="details-price">{product.price}</p>
+              <button
+                className="buy-btn"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  alert("Added to the cart!");
+                }}
+              >
+                Buy
+              </button>
         </div>
       </div>
     </section>
