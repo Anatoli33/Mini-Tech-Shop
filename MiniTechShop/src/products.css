@@ -83,3 +83,8 @@
 .buy-btn:active {
   transform: translateY(0);
 }
+/* Product Link */
+.product-link{
+  text-decoration: none;
+  cursor: pointer;
+}
