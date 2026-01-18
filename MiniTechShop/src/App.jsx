@@ -5,6 +5,7 @@ import Navbar from './Navigation.jsx';
 import { Route, Routes } from 'react-router-dom';
 import Products from './Products';
 import ProductDetails from './productDetails.jsx';
+import Cart from './Cart';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Hero />} />
           <Route path="/products" element={<Products />} />
           <Route path="/product/:id" element={<ProductDetails />} />
+          <Route path="/cart" element={<Cart />} />          
         </Routes>
       </main>
 
