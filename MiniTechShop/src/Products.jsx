@@ -8,9 +8,11 @@ import "swiper/css/pagination";
 
 import "./products.css";
 import { products } from "./data/product.js";
-
+import { useCart } from "./context/CartContext"; 
 
 const Products = () => {
+  const { addToCart } = useCart();
+
   return (
     <section className="products">
       <h2>Products</h2>
@@ -22,7 +24,7 @@ const Products = () => {
         loop={true}
         autoplay={{
           delay: 3000,
-          pauseOnMouseEnter: true
+          pauseOnMouseEnter: true,
         }}
         navigation
         pagination={{ clickable: true }}
@@ -35,22 +37,22 @@ const Products = () => {
         {products.map((product) => (
           <SwiperSlide key={product.id}>
             <Link to={`/product/${product.id}`} className="product-link">
-            <article className="product-card">
-              <img src={product.img} alt={product.title} />
-              <h3>{product.title}</h3>
-              <p className="price">{product.price}</p>
-              <button
-                className="buy-btn"
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  alert("Added to the cart!");
-                }}
-              >
-                Buy
-              </button>
+              <article className="product-card">
+                <img src={product.img} alt={product.title} />
+                <h3>{product.title}</h3>
+                <p className="price">{product.price}</p>
 
-            </article>
+                <button
+                  className="buy-btn"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    addToCart(product); 
+                  }}
+                >
+                  Buy
+                </button>
+              </article>
             </Link>
           </SwiperSlide>
         ))}
