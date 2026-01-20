@@ -1,7 +1,7 @@
 import './App.css'
-import Hero from './Hero';
-import Footer from './Footer';
-import Navbar from './Navigation.jsx';
+import Hero from './staticPages/Hero.jsx';
+import Footer from './staticPages/Footer.jsx';
+import Navbar from './staticPages/Navigation.jsx';
 import { Route, Routes } from 'react-router-dom';
 import Products from './Products';
 import ProductDetails from './productDetails.jsx';
