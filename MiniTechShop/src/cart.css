@@ -1,5 +1,4 @@
-/* cart.css */
-
+/* ===== Cart Container ===== */
 .cart-container {
   max-width: 1100px;        
   margin: 50px auto;
@@ -17,17 +16,17 @@
 }
 
 /* ===== Cart Item ===== */
-
 .cart-item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;                
+  justify-content: flex-start; /* картинката + текст + бутон */
+  gap: 20px;                
   padding: 20px 25px;
   border-radius: 12px;
   margin-bottom: 18px;
   background-color: #f5f5f5;
   transition: background-color 0.2s ease, transform 0.1s ease;
+  flex-wrap: wrap; /* за малки екрани */
 }
 
 .cart-item:hover {
@@ -35,12 +34,21 @@
   transform: translateY(-1px);
 }
 
-/* ===== Item Details ===== */
+/* ===== Cart Item Image ===== */
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain; /* запазва пропорциите */
+  border-radius: 12px;
+  flex-shrink: 0; /* не се свива */
+}
 
+/* ===== Item Details ===== */
 .cart-item-details {
   display: flex;
   flex-direction: column;
-  flex: 1;                   
+  flex: 1;                  
+  min-width: 0; /* текстът не излиза извън контейнера */
 }
 
 .cart-item-details p {
@@ -56,7 +64,6 @@
 }
 
 /* ===== Button ===== */
-
 .cart-item button {
   padding: 10px 18px;
   border: none;
@@ -76,7 +83,6 @@
 }
 
 /* ===== Empty Cart ===== */
-
 .empty-cart {
   text-align: center;
   font-style: italic;
@@ -86,7 +92,6 @@
 }
 
 /* ===== Responsive ===== */
-
 @media (max-width: 768px) {
   .cart-container {
     padding: 20px;
@@ -97,7 +102,128 @@
     align-items: flex-start;
   }
 
+  .cart-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
   .cart-item button {
     align-self: flex-end;
+    margin-top: 10px;
+  }
+}/* ===== Cart Container ===== */
+.cart-container {
+  max-width: 1100px;        
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 14px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #111;
+  margin-bottom: 35px;
+}
+
+/* ===== Cart Item ===== */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* картинката + текст + бутон */
+  gap: 20px;                
+  padding: 20px 25px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  background-color: #f5f5f5;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  flex-wrap: wrap; /* за малки екрани */
+}
+
+.cart-item:hover {
+  background-color: #e0f7fa;
+  transform: translateY(-1px);
+}
+
+/* ===== Cart Item Image ===== */
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain; /* запазва пропорциите */
+  border-radius: 12px;
+  flex-shrink: 0; /* не се свива */
+}
+
+/* ===== Item Details ===== */
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;                  
+  min-width: 0; /* текстът не излиза извън контейнера */
+}
+
+.cart-item-details p {
+  margin: 4px 0;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.cart-item-details .quantity {
+  font-weight: bold;
+  color: #00796b;
+}
+
+/* ===== Button ===== */
+.cart-item button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(224, 109, 109);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;       
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.cart-item button:hover {
+  background-color: rgb(231, 76, 76);
+  transform: scale(1.05);
+}
+
+/* ===== Empty Cart ===== */
+.empty-cart {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .cart-container {
+    padding: 20px;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  .cart-item button {
+    align-self: flex-end;
+    margin-top: 10px;
   }
 }
