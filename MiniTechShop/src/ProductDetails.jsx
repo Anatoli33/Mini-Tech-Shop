@@ -21,7 +21,7 @@ const ProductDetails = () => {
         <div className="details-info">
           <h1>{product.title}</h1>
           <p className="details-desc">{product.description}</p>
-          <p className="details-price">{product.price}</p>
+          <p className="details-price">€{product.price}</p>
               <button
                 className="buy-btn"
                 onClick={(e) => {

@@ -40,7 +40,7 @@ const Products = () => {
               <article className="product-card">
                 <img src={product.img} alt={product.title} />
                 <h3>{product.title}</h3>
-                <p className="price">{product.price}</p>
+                <p className="price">€{product.price}</p>
 
                 <button
                   className="buy-btn"
