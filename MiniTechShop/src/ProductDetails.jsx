@@ -1,9 +1,11 @@
 import { useParams, Link } from "react-router-dom";
 import "./productDetails.css";
 import { products } from "./data/product.js";
+import { useCart } from "./context/CartContext"; 
 
 const ProductDetails = () => {
   const { id } = useParams();
+  const { addToCart } = useCart();
 
   const product = products.find(p => p.id === Number(id));
 
@@ -22,16 +24,13 @@ const ProductDetails = () => {
           <h1>{product.title}</h1>
           <p className="details-desc">{product.description}</p>
           <p className="details-price">€{product.price}</p>
-              <button
-                className="buy-btn"
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  alert("Added to the cart!");
-                }}
-              >
-                Buy
-              </button>
+
+          <button
+            className="buy-btn"
+            onClick={() => addToCart(product)}
+          >
+            Buy
+          </button>
         </div>
       </div>
     </section>
