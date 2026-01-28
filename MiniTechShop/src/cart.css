@@ -1,6 +1,17 @@
+/* ===== Color Palette =====
+Primary: #00796b
+Primary hover: #00695c
+Light bg: #f4f6f6
+Hover bg: #e0f2f1
+Border: #e0e0e0
+Danger: #e53935
+Danger hover: #c62828
+Text: #263238
+*/
+
 /* ===== Cart Container ===== */
 .cart-container {
-  max-width: 1100px;        
+  max-width: 1100px;
   margin: 50px auto;
   padding: 30px;
   border-radius: 14px;
@@ -11,7 +22,7 @@
 .cart-container h2 {
   text-align: center;
   font-size: 30px;
-  color: #111;
+  color: #263238;
   margin-bottom: 35px;
 }
 
@@ -19,18 +30,17 @@
 .cart-item {
   display: flex;
   align-items: center;
-  justify-content: flex-start; 
-  gap: 20px;                
+  gap: 20px;
   padding: 20px 25px;
   border-radius: 12px;
   margin-bottom: 18px;
-  background-color: #f5f5f5;
+  background-color: #f4f6f6;
   transition: background-color 0.2s ease, transform 0.1s ease;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .cart-item:hover {
-  background-color: #e0f7fa;
+  background-color: #e0f2f1;
   transform: translateY(-1px);
 }
 
@@ -38,7 +48,7 @@
 .cart-item img {
   width: 100px;
   height: 100px;
-  object-fit: contain; 
+  object-fit: contain;
   border-radius: 12px;
   flex-shrink: 0;
 }
@@ -47,38 +57,82 @@
 .cart-item-details {
   display: flex;
   flex-direction: column;
-  flex: 1;                  
-  min-width: 0; 
+  flex: 1;
+  min-width: 0;
 }
 
 .cart-item-details p {
   margin: 4px 0;
-  color: #333;
+  color: #263238;
   font-size: 16px;
   line-height: 1.4;
 }
 
 .cart-item-details .quantity {
-  font-weight: bold;
+  font-weight: 600;
   color: #00796b;
 }
 
-/* ===== Button ===== */
-.cart-item button {
-  padding: 10px 18px;
-  border: none;
+/* ===== Quantity Controls ===== */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.quantity-controls button {
+  width: 34px;
+  height: 34px;
   border-radius: 8px;
-  background-color: rgb(224, 109, 109);
-  color: white;
-  font-size: 14px;
-  font-weight: 500;
+  border: 1px solid #00796b;
+  background-color: #00796b;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
   cursor: pointer;
-  white-space: nowrap;       
   transition: background 0.2s ease, transform 0.1s ease;
 }
 
-.cart-item button:hover {
-  background-color: rgb(231, 76, 76);
+.quantity-controls button:hover {
+  background-color: #00695c;
+  border-color: #00695c;
+}
+
+.quantity-controls button:active {
+  transform: scale(0.95);
+}
+
+.quantity-controls button:disabled {
+  background-color: #e0e0e0;
+  color: #9e9e9e;
+  border-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.quantity {
+  min-width: 24px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* ===== Remove Button ===== */
+.cart-item > button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e53935;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.cart-item > button:hover {
+  background-color: #c62828;
   transform: scale(1.05);
 }
 
@@ -99,48 +153,6 @@
   font-weight: bold;
   color: #00796b;
 }
-.quantity-controls {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 8px;
-}
-
-.quantity-controls button {
-
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  background: orange;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.quantity-controls button:hover {
-  background: #111;
-  color: #fff;
-  border-color: #111;
-}
-
-.quantity-controls button:active {
-  transform: scale(0.95);
-}
-
-.quantity-controls button:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-  background: #f5f5f5;
-  color: #999;
-  border-color: #ddd;
-}
-
-.quantity {
-  min-width: 24px;
-  text-align: center;
-  font-weight: 600;
-  font-size: 16px;
-}
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
@@ -159,7 +171,7 @@
     margin-bottom: 10px;
   }
 
-  .cart-item button {
+  .cart-item > button {
     align-self: flex-end;
     margin-top: 10px;
   }
