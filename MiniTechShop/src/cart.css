@@ -162,22 +162,24 @@ Text: #263238
 
   .cart-item {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+
   }
 
   .cart-item img {
-    width: 80px;
+    width: 80%;
     height: 80px;
     margin-bottom: 10px;
   }
 
   .cart-item > button {
-    align-self: flex-end;
+    width: 82%;
     margin-top: 10px;
   }
 
   .cart-total {
-    text-align: left;
+    text-align: center;
     font-size: 18px;
   }
 }
