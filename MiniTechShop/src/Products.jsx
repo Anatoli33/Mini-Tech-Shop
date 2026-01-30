@@ -16,7 +16,7 @@ const Products = () => {
   return (
     <>
     <section className="products">
-      <h2>Products</h2>
+      <h2>Top Products</h2>
 
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
@@ -59,6 +59,7 @@ const Products = () => {
         ))}
       </Swiper>
     </section>
+          <h2>Products</h2>
     <section className="products-grid">
         {products.map((product) => (
             <Link to={`/product/${product.id}`} className="product-link">
