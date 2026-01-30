@@ -186,9 +186,9 @@ Text: #263238
     font-size: 18px;
   }
   .quantity-controls {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 8px;
-}
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 8px;
+  }
 }

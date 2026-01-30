@@ -14,6 +14,7 @@ const Products = () => {
   const { addToCart } = useCart();
 
   return (
+    <>
     <section className="products">
       <h2>Products</h2>
 
@@ -58,6 +59,18 @@ const Products = () => {
         ))}
       </Swiper>
     </section>
+    <section className="products-grid">
+        {products.map((product) => (
+            <Link to={`/product/${product.id}`} className="product-link">
+              <article className="product-card">
+                <img src={product.img} alt={product.title} />
+                <h3>{product.title}</h3>
+                <p className="price">€{product.price}</p>
+              </article>
+            </Link>
+        ))}
+    </section>
+    </>
   );
 };
 
