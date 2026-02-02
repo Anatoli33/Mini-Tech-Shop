@@ -62,7 +62,7 @@ const Products = () => {
           <h2>Products</h2>
     <section className="products-grid">
         {products.map((product) => (
-            <Link to={`/product/${product.id}`} className="product-link">
+            <Link key={product.id} to={`/product/${product.id}`} className="product-link">
               <article className="product-card">
                 <img src={product.img} alt={product.title} />
                 <h3>{product.title}</h3>
