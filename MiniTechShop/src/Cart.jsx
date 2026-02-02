@@ -14,7 +14,9 @@ const Cart = () => {
       <h2>Cart</h2>
 
       {cart.length === 0 && (
-        <p className="empty-cart">Your cart is empty.</p>
+        <p className="empty-cart">
+          Your cart is empty. Go grab something cool 🛒
+        </p>
       )}
 
       {cart.map((item) => (
