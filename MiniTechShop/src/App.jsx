@@ -4,7 +4,7 @@ import Footer from './staticPages/Footer.jsx';
 import Navbar from './staticPages/Navigation.jsx';
 import { Route, Routes } from 'react-router-dom';
 import Products from './Products';
-import ProductDetails from './productDetails.jsx';
+import ProductDetails from './ProductDetails.jsx';
 import Cart from './Cart';
 
 function App() {
