@@ -3,9 +3,9 @@ import Hero from './staticPages/Hero.jsx';
 import Footer from './staticPages/Footer.jsx';
 import Navbar from './staticPages/Navigation.jsx';
 import { Route, Routes } from 'react-router-dom';
-import Products from './Products';
-import ProductDetails from './ProductDetails.jsx';
-import Cart from './Cart';
+import Products from './/products/Products.jsx';
+import ProductDetails from './products/ProductDetails.jsx';
+import Cart from './cart/Cart.jsx';
 
 function App() {
   return (

@@ -7,8 +7,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import "./products.css";
-import { products } from "./data/product.js";
-import { useCart } from "./context/cartContext.jsx"; 
+import { products } from "../data/product.js";
+import { useCart } from "../context/cartContext.jsx"; 
 
 const Products = () => {
   const { addToCart } = useCart();
