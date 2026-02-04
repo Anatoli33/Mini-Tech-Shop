@@ -68,7 +68,7 @@ h2 {
 .price {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #17a2f3;
+  color: #00796b;
   margin-top: 0.5rem;
 }
 
@@ -78,7 +78,7 @@ h2 {
   padding: 0.6rem 1.2rem;
   border: none;
   border-radius: 8px;
-  background-color: #17a2f3;
+  background-color: #00796b;
   color: white;
   font-size: 1rem;
   font-weight: 600;
@@ -87,7 +87,7 @@ h2 {
 }
 
 .buy-btn:hover {
-  background-color: #0f88ce;
+  background-color: #00695c;
   transform: translateY(-2px);
 }
 
@@ -135,7 +135,7 @@ h2 {
 
 .products-grid .product-card .price {
   font-weight: bold;
-  color: #2a9d8f;
+  color: #00796b;
   margin-bottom: 10px;
 }
 .products-grid .product-card img {
