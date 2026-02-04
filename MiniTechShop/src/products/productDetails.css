@@ -9,14 +9,14 @@
   display: inline-block;
   padding: 0.5rem 1rem;
   border-radius: 8px;
-  background: #17a2f3;
+  background-color: #00796b;
   color: #fff;
   font-weight: 600;
   text-decoration: none;
 }
 
 .back-btn:hover {
-  background: #0f88ce;
+  background-color: #00695c;
 }
 
 .details-card {
@@ -39,7 +39,7 @@
 .details-price {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #17a2f3;
+  color: #00796b;
   margin: 1rem 0;
 }
 
