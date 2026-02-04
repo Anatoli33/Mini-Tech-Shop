@@ -172,7 +172,10 @@ Text: #263238
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.1s ease;
 }
+.finalize button:hover{
+   background-color: #00695c;
 
+}
 .finalize button:active {
     transform: scale(0.98);
 }
