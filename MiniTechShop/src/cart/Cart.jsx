@@ -1,5 +1,6 @@
 import { useCart } from "../context/cartContext.jsx";
 import "./cart.css";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const { cart, addToCart, decreaseQuantity, removeFromCart } = useCart();
@@ -46,7 +47,9 @@ const Cart = () => {
       {cart.length > 0 && (
         <div className="cart-total">
           <h3>Total: €{totalPrice.toFixed(2)}</h3>
+          <Link to="/checkout" className="hero-link">
           <button>Finalize</button>
+          </Link>
         </div>
       )}
     </div>
