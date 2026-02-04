@@ -46,6 +46,7 @@ const Cart = () => {
       {cart.length > 0 && (
         <div className="cart-total">
           <h3>Total: €{totalPrice.toFixed(2)}</h3>
+          <button>Finalize</button>
         </div>
       )}
     </div>
