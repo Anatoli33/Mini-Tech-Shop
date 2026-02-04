@@ -47,7 +47,7 @@ const Cart = () => {
       {cart.length > 0 && (
         <div className="cart-total">
           <h3>Total: €{totalPrice.toFixed(2)}</h3>
-          <Link to="/checkout" className="hero-link">
+          <Link to="/checkout" className="finalize">
           <button>Finalize</button>
           </Link>
         </div>
