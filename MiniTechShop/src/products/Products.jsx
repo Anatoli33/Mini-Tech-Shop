@@ -19,6 +19,7 @@ const Products = () => {
       <h2>Top Products</h2>
 
       <Swiper
+        className="products-swiper"
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={50}
         slidesPerView={3}
