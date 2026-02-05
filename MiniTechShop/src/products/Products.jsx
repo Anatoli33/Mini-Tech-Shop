@@ -9,16 +9,15 @@ import "swiper/css/pagination";
 import "./products.css";
 import { products } from "../data/product.js";
 import { useCart } from "../context/cartContext.jsx"; 
-import toast from "react-hot-toast"; // ✅ Import toast
 
 const Products = () => {
   const { addToCart } = useCart();
 
 
   const handleAddToCart = (e, product) => {
-    e.preventDefault();      // prevent navigation
-    e.stopPropagation();     // stop event bubbling
-    addToCart(product);      // add to cart (context already triggers toast)
+    e.preventDefault();     
+    e.stopPropagation();   
+    addToCart(product);     
   };
 
   return (

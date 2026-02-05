@@ -15,12 +15,12 @@ function App() {
       <Navbar />
 
       <Toaster 
-        position="top-right" 
+        position="bottom-right" 
         reverseOrder={false} 
         toastOptions={{
-          duration: 3000,
+          duration: 2000,
           style: {
-            background: '#22c55e',
+            background: '#00796b',
             color: '#fff',
             fontWeight: 'bold',
           },
