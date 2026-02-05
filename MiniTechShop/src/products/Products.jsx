@@ -9,69 +9,74 @@ import "swiper/css/pagination";
 import "./products.css";
 import { products } from "../data/product.js";
 import { useCart } from "../context/cartContext.jsx"; 
+import toast from "react-hot-toast"; // ✅ Import toast
 
 const Products = () => {
   const { addToCart } = useCart();
 
+
+  const handleAddToCart = (e, product) => {
+    e.preventDefault();      // prevent navigation
+    e.stopPropagation();     // stop event bubbling
+    addToCart(product);      // add to cart (context already triggers toast)
+  };
+
   return (
     <>
-    <section className="products">
-      <h2>Top Products</h2>
+      <section className="products">
+        <h2>Top Products</h2>
 
-      <Swiper
-        className="products-swiper"
-        modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={50}
-        slidesPerView={3}
-        loop={true}
-        autoplay={{
-          delay: 3000,
-          pauseOnMouseEnter: true,
-        }}
-        navigation
-        pagination={{ clickable: true }}
-        breakpoints={{
-          0: { slidesPerView: 1 },
-          640: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-        }}
-      >
-        {products.map((product) => (
-          <SwiperSlide key={product.id}>
-            <Link to={`/product/${product.id}`} className="product-link">
-              <article className="product-card">
-                <img src={product.img} alt={product.title} />
-                <h3>{product.title}</h3>
-                <p className="price">€{product.price}</p>
+        <Swiper
+          className="products-swiper"
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={50}
+          slidesPerView={3}
+          loop={true}
+          autoplay={{
+            delay: 3000,
+            pauseOnMouseEnter: true,
+          }}
+          navigation
+          pagination={{ clickable: true }}
+          breakpoints={{
+            0: { slidesPerView: 1 },
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+        >
+          {products.map((product) => (
+            <SwiperSlide key={product.id}>
+              <Link to={`/product/${product.id}`} className="product-link">
+                <article className="product-card">
+                  <img src={product.img} alt={product.title} />
+                  <h3>{product.title}</h3>
+                  <p className="price">€{product.price}</p>
 
-                <button
-                  className="buy-btn"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    addToCart(product); 
-                  }}
-                >
-                  Buy
-                </button>
-              </article>
-            </Link>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </section>
-          <h2>Products</h2>
-    <section className="products-grid">
+                  <button
+                    className="buy-btn"
+                    onClick={(e) => handleAddToCart(e, product)}
+                  >
+                    Buy
+                  </button>
+                </article>
+              </Link>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </section>
+
+      <h2>Products</h2>
+      <section className="products-grid">
         {products.map((product) => (
-            <Link key={product.id} to={`/product/${product.id}`} className="product-link">
-              <article className="product-card">
-                <img src={product.img} alt={product.title} />
-                <h3>{product.title}</h3>
-                <p className="price">€{product.price}</p>
-              </article>
-            </Link>
+          <Link key={product.id} to={`/product/${product.id}`} className="product-link">
+            <article className="product-card">
+              <img src={product.img} alt={product.title} />
+              <h3>{product.title}</h3>
+              <p className="price">€{product.price}</p>
+            </article>
+          </Link>
         ))}
-    </section>
+      </section>
     </>
   );
 };

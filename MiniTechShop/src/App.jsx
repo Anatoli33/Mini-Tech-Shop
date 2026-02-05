@@ -7,10 +7,25 @@ import Products from './/products/Products.jsx';
 import ProductDetails from './products/ProductDetails.jsx';
 import Cart from './cart/Cart.jsx';
 
+import { Toaster } from 'react-hot-toast';
+
 function App() {
   return (
     <div className="app-layout">
       <Navbar />
+
+      <Toaster 
+        position="top-right" 
+        reverseOrder={false} 
+        toastOptions={{
+          duration: 3000,
+          style: {
+            background: '#22c55e',
+            color: '#fff',
+            fontWeight: 'bold',
+          },
+        }}
+      />
 
       <main className="main-content">
         <Routes>
