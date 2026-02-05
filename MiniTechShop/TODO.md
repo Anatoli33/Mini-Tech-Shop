@@ -5,4 +5,4 @@
 * 💳 Checkout page
 * ⭐ Product ratings
 * ⭐ Better Top products
-* ⭐ Better Styling
+* ⭐ Pick color plate for the website
