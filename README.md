@@ -15,6 +15,7 @@ A modern **React-based e-commerce demo** featuring a product slider, product gri
   * Automatic total price calculation
 * 🧠 **Global cart state** via React Context
 * 🔗 **Product details routing** with React Router
+* 🔔 **Toast notifications** (React Hot Toast)  
 * 📱 **Responsive design** (mobile → desktop)
 
 ---
@@ -25,6 +26,7 @@ A modern **React-based e-commerce demo** featuring a product slider, product gri
 * **React Router DOM** – routing
 * **React Context API** – cart state management
 * **Swiper.js** – product carousel
+* **React Hot Toast** – toast notifications for cart actions  
 * **CSS** – custom styling
 
 
@@ -77,7 +79,6 @@ The app will start on:
 ## 🔮 Future Improvements
 
 * 💾 Persist cart in `localStorage`
-* 🔔 Toast notifications (Add / Remove)
 * ❤️ Wishlist functionality
 * 💳 Checkout page
 * ⭐ Product ratings
