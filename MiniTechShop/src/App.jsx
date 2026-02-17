@@ -5,6 +5,7 @@ import Navbar from './staticPages/Navigation.jsx';
 import { Route, Routes } from 'react-router-dom';
 import Products from './/products/Products.jsx';
 import ProductDetails from './products/ProductDetails.jsx';
+import CheckoutPage from './cart/Checkout.jsx';
 import Cart from './cart/Cart.jsx';
 
 import { Toaster } from 'react-hot-toast';
@@ -32,7 +33,8 @@ function App() {
           <Route path="/" element={<Hero />} />
           <Route path="/products" element={<Products />} />
           <Route path="/product/:id" element={<ProductDetails />} />
-          <Route path="/cart" element={<Cart />} />          
+          <Route path="/cart" element={<Cart />} />  
+          <Route path="/checkout" element={<CheckoutPage />} />            
         </Routes>
       </main>
 
