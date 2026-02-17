@@ -1,7 +1,7 @@
 ## 🔮 Future Improvements
 
 * 💾 Persist cart in `localStorage`
-* 💳 Checkout page
+* 💳 Order Summary
 * ⭐ Product ratings
 * ⭐ Better Top products
 * ⭐ Pick color plate for the website

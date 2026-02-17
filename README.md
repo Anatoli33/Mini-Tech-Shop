@@ -80,7 +80,6 @@ The app will start on:
 
 * 💾 Persist cart in `localStorage`
 * ❤️ Wishlist functionality
-* 💳 Checkout page
 * ⭐ Product ratings
 
 ---
