@@ -68,7 +68,7 @@ h2 {
 .price {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #00796b;
+  color: #099de2;
   margin-top: 0.5rem;
 }
 
@@ -78,7 +78,7 @@ h2 {
   padding: 0.6rem 1.2rem;
   border: none;
   border-radius: 8px;
-  background-color: #00796b;
+  background-color: #099de2;
   color: white;
   font-size: 1rem;
   font-weight: 600;
@@ -135,7 +135,7 @@ h2 {
 
 .products-grid .product-card .price {
   font-weight: bold;
-  color: #00796b;
+  color: #099de2;
   margin-bottom: 10px;
 }
 .products-grid .product-card img {
@@ -147,7 +147,7 @@ h2 {
   padding: 10px;
 }
 .products-swiper {
-  --swiper-theme-color: #00796b;
+  --swiper-theme-color: #099de2;
 }
 @media (max-width: 1024px) {
   .products-grid {

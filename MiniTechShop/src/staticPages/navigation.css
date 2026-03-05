@@ -38,11 +38,11 @@
 }
 
 .nav-links li a:hover {
-  color: #3bf6b8;
+  color: #099de2;
 }
 
 .nav-links li a.active {
-  color: #3bf6b8;
+  color: #099de2;
   font-weight: 700;
 }
 
@@ -53,7 +53,7 @@
   bottom: -6px;
   width: 100%;
   height: 2px;
-  background-color: #3bf6b8;
+  background-color: #099de2;
   border-radius: 2px;
 }
 
