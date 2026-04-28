@@ -39,6 +39,19 @@ const Navbar = () => {
             Cart
           </NavLink>
         </li>
+        
+        <li>
+          <NavLink to="/login" onClick={closeMenu}>
+            Login
+          </NavLink>
+        </li>
+
+        
+        <li>
+          <NavLink to="/register" onClick={closeMenu}>
+            Register
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

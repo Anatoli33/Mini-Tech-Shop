@@ -7,6 +7,8 @@ import Products from './/products/Products.jsx';
 import ProductDetails from './products/ProductDetails.jsx';
 import CheckoutPage from './cart/Checkout.jsx';
 import Cart from './cart/Cart.jsx';
+import Register from './register/register.jsx';
+import Login from './login/Login';
 
 import { Toaster } from 'react-hot-toast';
 
@@ -34,7 +36,9 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/product/:id" element={<ProductDetails />} />
           <Route path="/cart" element={<Cart />} />  
-          <Route path="/checkout" element={<CheckoutPage />} />            
+          <Route path="/checkout" element={<CheckoutPage />} />  
+          <Route path="/register" element={<Register />} />  
+          <Route path="/login" element={<Login />} />  
         </Routes>
       </main>
 
